@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+    <!-- 企业定制版css文件调用 -->
+    <link rel="stylesheet" href="css/demo.css">
+</head>
+<style>
+	input[type=submit] {display: inline-block;width: 500px;height: 38px;line-height: 38px;color: #fff;border-radius: 22px;background: linear-gradient(135deg, #1cbefe 0%, #2cb1ff 48%, #3ba3ff 100%);box-shadow: 1.5px 2.598px 13px 0px rgba(40,137,222,0.46);border: none;outline: none;font-weight: 600;font-size: 16px;letter-spacing: 2px;}
+</style>
+<body>
+	<div style="width:800px;margin:0 auto;">
+		<form action="" method="post">
+			<script id="kolediter" name="content" style="width:800px;" type="text/plain"></script>
+			<br/>
+			<div style="text-align:center;">
+				<input type="submit" value="提交表单" onclick="$(this.form).serialize();return true;">
+			</div>				
+		</form>
+	</div>
+</body>
+
+</html>
+    <!-- <script src="./ueditor/jquery.min.js"></script> -->
+	<script src="./js/jquery.min.js"></script>
+	<script src="./ueditor/ueditor.config.js"></script>
+    <script src="./ueditor/ueditor.all.min.js"></script>
+
+    <!-- 企业定制版js文件调用 -->
+    <script src="./js/demo.js"></script>
+	<script>
+
+		/// 初始化编辑器
+		var ue = UE.getEditor('kolediter', {
+	        initialFrameHeight: 540, // 初始化编辑器高度
+			styleIcon: "https://custom.365editor.com/static/images/owl.png", // 素材区头部的logo图标地址链接，不填或为空则不展示logo
+			styleTitle: "此处可自定义企业logo以及标题", // 素材区头部的title标题，不填或为空则不展示title
+	        styleShow: true, // 是否默认展示素材区，true为默认展示，false为默认不展示
+	        styleWidth: 365, // 素材区宽度
+	        appkey: '' // 付费获取的Appkey
+	    });
+
+	    var default_editor_content = 
+		'<section class="KolEditor" style="position: relative;"><section style="margin-right: auto; margin-left: auto; clear: both; position: relative; width: 473px; overflow: hidden;"><section style="margin-top: 0.5em; margin-bottom: 1em; position: static; text-align: center;"><section><section style="width: 300px; height: 74px; display: inline-block;"><img src="http://peditor.kolstore.com/ueditor/php/upload/image/20180206/1517899256755982.png" style="width: 300px;" _src="http://peditor.kolstore.com/ueditor/php/upload/image/20180206/1517899256755982.png"></section></section><section style="margin-top: -74px;margin-right: auto;margin-left: auto;padding: 5px 15px;width: 280px;height: 58px;overflow: hidden;"><section style="padding: 10px; color: inherit;"><p style="font-size: 20px; color: rgb(254, 254, 254); line-height: 1.6em;">365编辑器企业定制</p></section></section></section></section></section><p><br></p><section class="KolEditor" style="white-space: normal; font-family: Arial; border: 0px none; color: rgb(49, 147, 105); position: relative;"><section style="margin-top: 35px; margin-bottom: 10px; display: inline-block;"><section style="padding-top: 2px; padding-right: 5px; padding-left: 5px; border-bottom: 1px solid rgb(255, 129, 36); color: inherit; border-top-style: none;"><section style="margin-top: -52px; float: left; color: inherit;"><section style="height: 0px; width: 0px; border-width: 16px; border-style: solid; border-color: transparent transparent rgb(255, 129, 36); color: inherit;"></section><section style="margin-left: 6px; width: 21px; height: 10px; color: rgb(255, 255, 255); border-color: rgb(255, 129, 36); background-color: rgb(255, 129, 36);"></section><section style="margin-top: -8px; color: inherit;"><section style="margin-left: 6px; width: 8px; height: 12px; display: inline-block; color: rgb(255, 255, 255); border-color: rgb(255, 129, 36); background: rgb(255, 129, 36);"></section><section style="margin-left: 5px; width: 8px; height: 14px; display: inline-block; color: rgb(255, 255, 255); border-color: rgb(255, 129, 36); background: rgb(255, 129, 36);"></section></section></section><section style="margin-top: -32px; margin-left: 25px; color: inherit;"><section style="padding-top: 5px; padding-right: 15px; padding-left: 15px; color: inherit;"><span style="color: inherit; font-size: 14px;">系统嵌入简单修改几行前段JS代码即可，具体可见“企业定制版调用说明”；</span></section></section></section></section></section><section class="KolEditor" style="white-space: normal; font-family: Arial; border: 0px none; color: rgb(49, 147, 105); position: relative;"><section style="margin-top: 35px; margin-bottom: 10px; display: inline-block;"><section style="padding-top: 2px; padding-right: 5px; padding-left: 5px; border-bottom: 1px solid rgb(255, 129, 36); color: inherit; border-top-style: none;"><section style="margin-top: -47px; float: left; color: inherit;"><section style="height: 0px; width: 0px; border-width: 16px; border-style: solid; border-color: transparent transparent rgb(255, 129, 36); color: inherit;"></section><section style="margin-left: 6px; width: 21px; height: 10px; color: rgb(255, 255, 255); border-color: rgb(255, 129, 36); background-color: rgb(255, 129, 36);"></section><section style="margin-top: -8px; color: inherit;"><section style="margin-left: 6px; width: 8px; height: 12px; display: inline-block; color: rgb(255, 255, 255); border-color: rgb(255, 129, 36); background: rgb(255, 129, 36);"></section><section style="margin-left: 5px; width: 8px; height: 14px; display: inline-block; color: rgb(255, 255, 255); border-color: rgb(255, 129, 36); background: rgb(255, 129, 36);"></section></section></section><section style="margin-top: -32px; margin-left: 25px; color: inherit;"><section style="padding-top: 5px; padding-right: 15px; padding-left: 15px; color: inherit;"><span style="color: inherit; font-size: 14px;">嵌入后原业务系统的编辑区将替换成365编辑器编辑区；</span></section></section></section></section></section><section class="KolEditor" style="white-space: normal; font-family: Arial; border: 0px none; color: rgb(49, 147, 105); position: relative;"><section style="margin-top: 35px; margin-bottom: 10px; display: inline-block;"><section style="padding-top: 2px; padding-right: 5px; padding-left: 5px; border-bottom: 1px solid rgb(255, 129, 36); color: inherit; border-top-style: none;"><section style="margin-top: -52px; float: left; color: inherit;"><section style="height: 0px; width: 0px; border-width: 16px; border-style: solid; border-color: transparent transparent rgb(255, 129, 36); color: inherit;"></section><section style="margin-left: 6px; width: 21px; height: 10px; color: rgb(255, 255, 255); border-color: rgb(255, 129, 36); background-color: rgb(255, 129, 36);"></section><section style="margin-top: -8px; color: inherit;"><section style="margin-left: 6px; width: 8px; height: 12px; display: inline-block; color: rgb(255, 255, 255); border-color: rgb(255, 129, 36); background: rgb(255, 129, 36);"></section><section style="margin-left: 5px; width: 8px; height: 14px; display: inline-block; color: rgb(255, 255, 255); border-color: rgb(255, 129, 36); background: rgb(255, 129, 36);"></section></section></section><section style="margin-top: -32px; margin-left: 25px; color: inherit;"><section style="padding-top: 5px; padding-right: 15px; padding-left: 15px; color: inherit;"><span style="color: inherit; font-size: 14px;">付费获取Appkey后，同步使用365编辑器；</span></section></section></section></section></section><section class="KolEditor" style="white-space: normal; font-family: Arial; border: 0px none; color: rgb(49, 147, 105); position: relative;"><section style="margin-top: 35px; margin-bottom: 10px; display: inline-block;"><section style="padding-top: 2px; padding-right: 5px; padding-left: 5px; border-bottom: 1px solid rgb(255, 129, 36); color: inherit; border-top-style: none;"><section style="margin-top: -47px; float: left; color: inherit;"><section style="height: 0px; width: 0px; border-width: 16px; border-style: solid; border-color: transparent transparent rgb(255, 129, 36); color: inherit;"></section><section style="margin-left: 6px; width: 21px; height: 10px; color: rgb(255, 255, 255); border-color: rgb(255, 129, 36); background-color: rgb(255, 129, 36);"></section><section style="margin-top: -8px; color: inherit;"><section style="margin-left: 6px; width: 8px; height: 12px; display: inline-block; color: rgb(255, 255, 255); border-color: rgb(255, 129, 36); background: rgb(255, 129, 36);"></section><section style="margin-left: 5px; width: 8px; height: 14px; display: inline-block; color: rgb(255, 255, 255); border-color: rgb(255, 129, 36); background: rgb(255, 129, 36);"></section></section></section><section style="margin-top: -32px; margin-left: 25px; color: inherit;"><section style="padding-top: 5px; padding-right: 15px; padding-left: 15px; color: inherit;"><span style="color: inherit; font-size: 14px;">上传的内容数据保存至企业内部业务系统服务器，365编辑器不作任何获取或备份；</span></section></section></section></section></section><section class="KolEditor" style="white-space: normal; font-family: Arial; border: 0px none; color: rgb(49, 147, 105); position: relative;"><section style="margin-top: 35px; margin-bottom: 10px; display: inline-block;"><section style="padding-top: 2px; padding-right: 5px; padding-left: 5px; border-bottom: 1px solid rgb(255, 129, 36); color: inherit; border-top-style: none;"><section style="margin-top: -52px; float: left; color: inherit;"><section style="height: 0px; width: 0px; border-width: 16px; border-style: solid; border-color: transparent transparent rgb(255, 129, 36); color: inherit;"></section><section style="margin-left: 6px; width: 21px; height: 10px; color: rgb(255, 255, 255); border-color: rgb(255, 129, 36); background-color: rgb(255, 129, 36);"></section><section style="margin-top: -8px; color: inherit;"><section style="margin-left: 6px; width: 8px; height: 12px; display: inline-block; color: rgb(255, 255, 255); border-color: rgb(255, 129, 36); background: rgb(255, 129, 36);"></section><section style="margin-left: 5px; width: 8px; height: 14px; display: inline-block; color: rgb(255, 255, 255); border-color: rgb(255, 129, 36); background: rgb(255, 129, 36);"></section></section></section><section style="margin-top: -32px; margin-left: 25px; color: inherit;"><section style="padding-top: 5px; padding-right: 15px; padding-left: 15px; color: inherit;"><span style="color: inherit; font-size: 14px;">365编辑器系统优化后，可免费升级。</span></section></section></section></section></section><section class="KolEditor" style="white-space: normal; font-family: Arial; border: 0px none; color: rgb(49, 147, 105); position: relative;"></section>';
+
+		// 注：ue.setContent()方法需放在编辑器准备就绪后去执行
+    	ue.ready(function() {
+	    	ue.setContent(default_editor_content)
+    	});
+
+	</script>
